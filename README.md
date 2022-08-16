@@ -1,0 +1,2 @@
+# odinProject
+Practice JS
