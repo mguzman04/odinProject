@@ -1,0 +1,19 @@
+header {
+	background-color: #1F2937;
+	color: #F9FAF8;
+	font-size: 24px;
+}
+
+.first-section {
+	background-color: #1F2937;
+	color: #F9FAF8;
+}
+
+.secondary-text {
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+button {
+	background-color: #3882F6;
+}
