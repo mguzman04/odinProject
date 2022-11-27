@@ -24,13 +24,20 @@ function playRound(player, computerChoice, score) {
 };
 
 function game() {
-    console.log("Rock, Paper, Scissors!");
     let score = { player: 0, computer: 0};
-    for(let i = 0; i < 5; i++){
-        const playerChoice = prompt("Rock, Paper, or Scissors");
-        console.log(playRound(playerChoice, computerChoice(), score));
-        console.log(`Computer ${score.computer}, You: ${score.player}`);
-    }
+    let result;
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            playRound(button.id, computerChoice(), score);
+        });
+    });
+    
+    // for(let i = 0; i < 5; i++){
+    //     const playerChoice = prompt("Rock, Paper, or Scissors");
+    //     console.log(playRound(playerChoice, computerChoice(), score));
+    //     console.log(`Computer ${score.computer}, You: ${score.player}`);
+    // }
 } 
 
 game();
