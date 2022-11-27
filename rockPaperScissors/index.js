@@ -6,6 +6,8 @@ function computerChoice() {
 
 function playRound(player, computerChoice, score) {
     let playerChoice = choices.indexOf(player.toLowerCase());
+    let playerScore = document.getElementById('player');
+    let computerScore = document.getElementById('computer');
     // tie
     if (playerChoice === computerChoice){
         return "It's a tie";
@@ -15,10 +17,12 @@ function playRound(player, computerChoice, score) {
                 (playerChoice === 1 && computerChoice === 0) ||
                 (playerChoice === 2 && computerChoice === 1)) {
         score.player++;
+        playerScore.textContent = score.player;
         return `You win! ${choices[playerChoice]} beats ${choices[computerChoice]}`;
     }
     else {
         score.computer++;
+        computerScore.textContent = score.computer;
         return `You lose! ${choices[computerChoice]} beats ${choices[playerChoice]}`;
     }
 };
