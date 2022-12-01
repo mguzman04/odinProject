@@ -7,11 +7,24 @@
 }
 
 #calc {
-    display: flex;
     border-radius: 30px;
     padding: 20px;
     width: 450px;
     height: 600px;
     background-color: gray;
     outline: solid black;
+    
+}
+
+#screen {
+    height: 20%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+#firstRow {
+    /* display: flex; */
+    /* width: fit-content; */
 }
