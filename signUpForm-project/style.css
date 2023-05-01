@@ -25,6 +25,25 @@ img {
     min-height: 100%;
 }
 
+.greeting {
+    font-size: 18px; 
+    font-weight: 700;
+}
+
 .formArea {
     margin: 5%;
+}
+
+form {
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 2rem;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, .4);
 }
