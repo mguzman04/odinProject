@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.nav-alignment{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+nav {
+    background-color: lightblue;
+}
