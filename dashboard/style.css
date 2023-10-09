@@ -5,8 +5,37 @@ body {
 .nav-alignment{
     display: grid;
     grid-template-columns: 20% auto;
+    height: 100vh;
 }
 
 nav {
-    background-color: lightblue;
+    background-color: rgb(40, 128, 222);
+    color: white;
+}
+
+nav > div {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 2em;
+}
+
+nav > div > h3 {
+    margin: .5em;
+}
+
+.content {
+    display: grid;
+    grid-template: 15% 85% / 100%;
+}
+
+header {
+    padding: 2em 3em;
+    background-color: white;
+    box-shadow: 0px 10px 6px -6px #777;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+}
+
+.dashboard {
+    padding: 2em 3em;
+    background-color: rgb(239, 239, 246);
 }
